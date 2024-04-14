@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(177, 231, 245);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.contenedor_nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    
+}
+.enlaces_header{
+    font-weight: 300;
+    font-size: large;
+    margin-left: auto;
+    transition: all ease-in-out .6s;   
+}
+.contenedor_nav .enlaces_header a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+.contenedor_nav .enlaces_header a.boton{
+    position: relative;
+}
+.contenedor_nav .enlaces_header a.boton::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.contenedor_nav .enlaces_header a.boton:hover::after{
+    transform: scaleX(1);
+}
