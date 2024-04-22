@@ -58,3 +58,43 @@ nav{
 .contenedor_nav .enlaces_header a.boton:hover::after{
     transform: scaleX(1);
 }
+.contenedor {
+
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(192, 234, 245);;
+}
+
+.contenido-header {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 10;
+}
+
+.contenido-header > img {
+    width: 500px;
+    height: 300px;
+    animation: ease-in animacion 0.5s;
+    position: relative;
+    left: 20%;
+}
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header P {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5d6678;
+    text-align: justify;
+}
+
+@keyframes animacion {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
