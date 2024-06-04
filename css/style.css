@@ -103,7 +103,7 @@ nav{
     100% { transform: scale(1); }
 }
 #banner {
-    background: url('/img/publicidad.png') no-repeat center center/cover;
+    background: url('img/publicidad.png') no-repeat center center/cover;
     color: white;
     padding: 200px 20px;
     text-align: center;
